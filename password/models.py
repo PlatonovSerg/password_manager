@@ -23,7 +23,6 @@ class Password(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def save(self, *args, **kwargs):
-        # Encrypt the password before saving
         if not self.encrypted_password.startswith("gAAAAA"):
             self.encrypted_password = cipher_suite.encrypt(
                 self.encrypted_password.encode()
