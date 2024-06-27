@@ -92,11 +92,3 @@ GET http://localhost:8000/api/password/example_service/
 ```sh {"id":"01J1CT5384TTKKVX1X340626BV"}
 GET http://localhost:8000/api/password/?service_name=example
 ```
-
-## Тестирование
-
-Для запуска тестов используйте следующую команду:
-
-```sh {"id":"01J1CT5384TTKKVX1X36Q7G3EY"}
-docker-compose run web python manage.py test
-```
